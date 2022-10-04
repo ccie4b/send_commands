@@ -1,0 +1,11 @@
+common_vars:
+	username: bsmithson
+    device_type: cisco_ios
+
+vars:
+    - hostname: atento
+      host: VARATO11
+      host: VARATO12   
+    - hostname: alorica
+      host: VARNCC11
+      host: VARNCC12
