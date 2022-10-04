@@ -1,0 +1,17 @@
+---
+
+    - name: Commands
+      hosts: VARATO11
+      connection: network_cli
+      gather_facts: no
+      
+      tasks:
+      
+        - name: Send a command
+          ios_command:
+            commands: show version
+          register: output
+          
+        - name: view first element
+          debug:
+            var: output['stdout'][0]
